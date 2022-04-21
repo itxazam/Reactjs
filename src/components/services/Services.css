@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700|Poppins:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+:root{
+    --black-color:#121212;
+    --golden-color:#E5AE35;
+    --font-family-poppins:"poppins", sans-serif;
+}

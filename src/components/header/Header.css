@@ -1,0 +1,105 @@
+/*---------------------------------------------------------*/
+/* HEADER                                 */
+/*---------------------------------------------------------*/
+
+:root{
+    --black-color:#121212;
+    --golden-color:#E5AE35;
+    --font-family-poppins:"poppins", sans-serif;
+}
+nav{
+    width: 100%;
+    background: black;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 99;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.menu-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-icon{
+    display: none;
+}
+.fas{
+    cursor: pointer;
+}
+.menu-icon .fa-times{
+    transform: rotate(360deg);
+    transition: all 0.2 ease-in-out;
+}
+.menu-icon .fa-bars{
+ transform: rotate(180deg);
+ transition: all 0.2s ease-in-out;
+}
+.menu-list li{
+    color:white;
+}
+.menu-list li a{
+    text-decoration: none;
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+    padding: 10px 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.menu-list li a.active{
+    color: var(--golden-color);
+    border-bottom: 4px solid var(--golden-color);
+}
+.menu-list li a.active:hover{
+    color: white;
+}
+.menu-list li a:hover{
+    background-color: var(--golden-color);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    
+}
+@media screen and (max-width:800px) {
+    .logo img{
+        width: 30px;
+        height: 30px;
+        margin: 40px;
+    }
+    .menu-list li a{
+        font-size: 14;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .menu-icon{
+        display: block;
+    }
+    .menu-list{
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #121212;
+        padding: 20px;
+        right: 0;
+        top: 64px;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-list li{
+        margin-bottom: 20px;
+        width: 100px;
+        text-align: center;
+    }
+    .menu-list li:last-child{
+        margin-bottom: 0px;
+    }
+    .menu-list.close{
+        right: -100%;
+        transition: all 0.5s ease-in-out;
+    }
+}

@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700|Poppins:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+:root{
+    --black-color:#121212;
+    --golden-color:#E5AE35;
+    --font-family-poppins:"poppins", sans-serif;
+}
+.home{
+    background-image: url("./home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.home-title{
+    padding: 130px 30px;
+}
+.home-title h1{
+    font-size: 50px;
+}
+.home-title p{
+    font-size: 20px;
+}
+.home-title p, h1{
+    color: white;
+    font-family: var(--font-family-poppins);
+}
+.home_image{
+    padding: 200px 50px;
+}
+.home_image img{
+ height: 80%;
+ width: 80%;    
+}
+
+
+/* About Us*/
+
+.section{
+    background-image: url("./about_us.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section h2{
+    text-align: center;
+    position: relative;
+    color: #121212;
+    margin-bottom: 20px;
+    font-weight: 40px;
+    font-family: var(--font-family-poppins);
+}
+.section h2::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    left: 0%;
+    bottom: 0px;
+    width: 100%;
+    height: 5px;
+    background-color:goldenrod;
+    margin-bottom: 0px;
+    
+}
+.about-header{
+    display: flex;
+    flex-direction: column;
+}
+.about-heading{
+    padding: 50px;
+}
+.about-heading h1{
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: var(--font-family-poppins);
+}
+.about-heading h3{
+    font-size: 20px;
+    color: var(--golden-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--font-family-poppins);
+}
+.about-heading p{
+    font-size: 20px;
+    text-align: justify;
+    font-family: var(--font-family-poppins);
+}
+.developed-projects{
+    color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    
+}
+.project-count{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border-radius: 50%;
+    border: 5px solid var(--black-color);
+    text-align: center;
+    font-size: 40px;
+    font-family: var(--font-family-poppins);
+    line-height: 40px;
+    padding: 60px 0px 0px 0px;
+}
+.project-count p{
+ color: #121212;
+ text-align: center;
+}
+
+.about_section{
+    margin: 60px 0px;
+}
+
+.about_text{
+    width: 100%;
+    height: 100vh;
+    background: url("./about_us.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about_text h2{
+    text-align: center;
+    position: relative;
+    color: #121212;
+    margin-bottom: 20px;
+}
+.about_text h2::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    left: 45%;
+    bottom: 0px;
+    width: 10%;
+    height: 5px;
+    background-color:goldenrod;
+    margin-bottom: 0px;
+    
+}
+
+
+.team-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #353333;
+}
+.team-container{
+    max-width: 950px;
+    width: 100%;
+    padding: 80px 0px;
+    overflow: hidden;
+}
+.team-container h3{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: var(--font-family-poppins);
+    text-align: center;
+    position: relative;
+    margin:50px;
+}
+.team-container h1::after{
+    content: " ";
+    background-color: white;
+    width: 290px;
+    bottom: -5px;
+    height: 5px;
+    position: absolute;
+    left: 35%;
+
+}
+.team-container .main-card{
+    display: flex;
+    width: 200%;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+}
+#two:checked ~ .main-card{
+    margin-left: -100%;
+}
+.cards .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main-card .cards{
+    width: calc(100%/2 -10px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+.main-card .cards .card{
+    background: #fff;
+    width: calc(100%/3 -10px);
+    padding: 45px 70px;
+    border-radius: 25px;
+    margin: 0px 10px;
+    transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+    transform: translateY(-12px);
+}
+.cards .card .content .about-team-image{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 14px;
+    background: goldenrod;
+    padding: 3px;
+    border-radius: 50%;
+}
+.card .content .about-team-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.card .content .details .employ-name{
+    font-size: 20px;
+    font-weight: 500;
+}
+.card .content .details .employ-desination{
+    font-size: 20px;
+    color: goldenrod
+}
+.card .content .media-icon{
+    display: flex;
+}
+.card .content .media-icon a{
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    background: goldenrod;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+.content .media-icon a:hover{
+    border-color: goldenrod;
+    color: black;
+    background: #fff;
+}
+.button{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.button label{
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    margin: 0px 4px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+.button label.active{
+    width: 35px;
+}
+#one:checked ~ .button label.one{
+    width: 35px;
+}
+#two:checked ~ .button label.two{
+    width: 35px;
+}
+#two:checked ~ .button label.one{
+    width: 15px;
+}
+#one:checked ~ .button label.two{
+    width: 15px;
+}
+input[type="radio"]{
+    display: none;
+}
+
+.testimain-section{
+    background-image: url("./about_us.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+
+
+
+
+
+
+/* contact form */
+
+
+.contact-heading{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contact-heading h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: var(--font-family-poppins);
+    text-align: center;
+    position: relative;
+    margin:50px;
+}
+.contact-heading h3::after{
+    content: " ";
+    position: absolute;
+    width: 28%;
+    height: 5px;
+    display: block;
+    background-color: var(--golden-color);
+    bottom: -5px;
+    left: 36%;
+   
+}
+.contact-form{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 100px 100px;
+   background-color: #fff;
+   border: 2px solid var(--golden-color);
+   border-radius: 10px;
+}
+.input-fields,
+.message{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0px 40px;
+}
+.input-fields input{
+    margin: 10px 0px;
+    background: transparent;
+    border: 0;
+    padding: 10px;
+    color: var(--golden-color);
+    border-bottom: 2px solid var(--golden-color);
+    font-family: var(--font-family-poppins);
+}
+
+.message textarea{
+    margin: 10px 0px;
+    background: transparent;
+    border: 0;
+    padding: 10px;
+    color: var(--golden-color);
+    height: 245px;
+    border: 2px solid var(--golden-color);
+    font-family: var(--font-family-poppins);
+}
+::-webkit-input-placeholder{
+    color: var(--golden-color);
+}
+::-moz-input-placeholder{
+    color: var(--golden-color);
+}
+::-ms-input-placeholder{
+    color: var(--golden-color);
+}
+.resultmessage{
+    color: green;
+    font-family: var(--font-family-poppins);
+    font-size: 20px;
+    font-weight: 400;
+}
+.btn{
+    margin: 10px 0px;
+    background: var(--golden-color);
+    text-align: center;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--font-family-poppins);
+    letter-spacing: 1px;
+    height: 50px;
+    line-height: 25px;
+    
+}
+.btn:hover{
+    background-color: white;
+    color: var(--golden-color);
+    border: 2px solid var(--golden-color);
+    transition: all 0.5s linear;
+}
