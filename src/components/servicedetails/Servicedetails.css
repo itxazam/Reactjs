@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700|Poppins:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+:root{
+    --black-color:#121212;
+    --golden-color:#E5AE35;
+    --font-family-poppins:"poppins", sans-serif;
+}
+
+.service{
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  /*---------------------------------------------------------*/
+  /* EXPERIANCE                                */
+  /*---------------------------------------------------------*/
+  .service-section {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .service-section h1{
+      text-align: center;
+      position: relative;
+      color: var(--golden-color);
+      margin-bottom: 20px;
+      font-weight: 800;
+      font-family: var(--font-family-poppins);
+  }
+  .service-section h1::after {
+      position: absolute;
+      content: " ";
+      display: block;
+      left: 0%;
+      bottom: 0px;
+      width: 100%;
+      height: 5px;
+      background-color:goldenrod;
+      margin-bottom: 0px;
+      
+  }
+  .tab {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 50%;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color:var(--black-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  a.nav-item.nav-link {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  a.nav-item.nav-link:hover {
+    background-color: white
+  }
+  a.nav-item.nav-link.active {
+    background-color: #03393f;
+  }
+  
+  .tabcontent {
+   
+    margin-top: 20px;
+    text-align: justify;
+    width: 100%;
+  }
+  
+  
+  .service-section .sectionBox {
+    width: 98%;
+    height: 400px;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-shadow: 0 0 10px 0 rgba(230, 230, 230, 1);
+    box-shadow: 0 0 10px 0 rgb(72, 72, 72);
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px 40px;
+    margin-top: 2%;
+  
+  }
+  .service-section .sectionBox:hover {
+    -webkit-box-shadow: 0 0 16px 0 rgba(230, 230, 230, 1);
+    box-shadow: 0 0 16px 0 rgb(72, 72, 72);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    padding-top: 20px;
+  }
+  
+  .service-section .sectionImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 10px 150px; 
+  }
+  
+  .service-section .sectionImage img {
+    width: 150px;
+    height: 150px;
+    -o-object-fit: contain;
+    object-fit: contain;
+   
+  }
+  
+  .service-section .sectionWords {
+    width: 90%;
+  }
+  
+  .service-section .sectionWords h4 {
+    margin-bottom: 4%;
+    color: #001517;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .service-section .sectionWords p,
+  .service-section .sectionWords ul li {
+    margin-top: 1%;
+    font-weight: 300;
+  }
+  
+  .service-section .sectionWords ul li {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+  }

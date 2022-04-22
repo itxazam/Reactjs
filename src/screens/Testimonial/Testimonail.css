@@ -1,0 +1,111 @@
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700|Poppins:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+:root{
+    --black-color:#121212;
+    --golden-color:#E5AE35;
+    --font-family-poppins:"poppins", sans-serif;
+}
+
+
+.testimonial-slider .slick-arrow.slick-prev,
+.testimonial-slider .slick-arrow.slick-next{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 5px;
+}
+.slick.prev::before,
+.slick.next::before{
+    display: none;
+}
+.testimonial-slider{
+    margin: 50px 0px;
+}
+.testimonial-bg-image{
+    background-image: url("../testimonial.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.testimonial-main h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: var(--font-family-poppins);
+    text-align: center;
+    position: relative;
+    margin:50px;
+}
+.testimonial-main h3::after{
+    content: " ";
+    background-color: #E5AE35;
+    width: 310px;
+    bottom: -5px;
+    height: 5px;
+    position: absolute;
+    left: 30%;
+
+}
+.testimonial-left{
+    padding: 60px 40px;
+
+}
+.testimonial-left p{
+    color: white;
+    font-family: var(--font-family-poppins);
+    margin: 50px 10px;
+    text-align: justify;
+    font-size: 15px;
+}
+.testimonial-project-link {
+        background-color: var(--golden-color);
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 20px;
+        border-radius: 10px;
+        font-family: var(--font-family-poppins);
+        color: white;
+        border: none;
+        outline: none;
+        transition: all 0.5s ease;
+    
+}
+    .testimonial-project-link:hover{
+        color: var(--golden-color);
+        background-color: white;
+        border: 1px solid var(--golden-color);
+    
+}
+
+
+.testimonial-reviews-link{
+    background-color: var(--golden-color);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 20px;
+    border-radius: 10px;
+    font-family: var(--font-family-poppins);
+    color: white;
+    border: none;
+    outline: none;
+    transition: all 0.5s ease;
+
+}
+.testimonial-reviews-link:hover{
+    color: var(--golden-color);
+    background-color: white;
+    border: 1px solid var(--golden-color);
+}
+.testimonial-right{
+    padding: 120px 40px 0px 0px;
+}
+.testimonial-main .slick-dots li button::before{
+    font-size: 20px;
+}
+.testimonial-main .slick-dots li{
+    top: 20px
+}

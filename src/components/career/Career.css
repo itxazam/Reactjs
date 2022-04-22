@@ -1,0 +1,295 @@
+:root{
+    --black-color:#121212;
+    --golden-color:#E5AE35;
+    --font-family-poppins:"poppins", sans-serif;
+}
+
+.career-page{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.career-head{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.career-head-heading h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: var(--font-family-poppins);
+    text-align: center;
+    position: relative;
+    margin:50px;
+}
+.career-head-heading h3::after{
+    content: " ";
+    background-color: #E5AE35;
+    width: 520px;
+    bottom: -5px;
+    height: 5px;
+    position: absolute;
+    left: 23%;
+}
+.career-head-heading{
+    padding: 20px 30px;
+}
+.career-head-paragraph p{
+    font-family: var(--font-family-poppins);
+    font-size: 18px;
+    text-align: justify;
+}
+.career-search{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+}
+.career-search label{
+    margin: 5px 10px;
+    font-size: 20px;
+    color: var(--golden-color);
+    font-family: var(--font-family-poppins);
+}
+.career-search input{
+    padding: 5px;
+    height: 40px;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 2px solid var(--golden-color);
+    margin: 10px 15px;
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+}
+.search-button{
+    margin-top: 40px;
+    width: 200px;
+}
+.career-search .search-button a:hover{
+    background-color: white;
+    color: var(--golden-color);
+    border: 1px solid var(--golden-color);
+    transition: all 0.5s ease-in;
+}
+.career-search .search-button a{
+    
+    padding: 8px 30px;
+    font-family: var(--font-family-poppins);
+    background-color: var(--golden-color);
+    color: var(--black-color);
+    border-radius: 5px;
+}
+
+.career-jobs-details-black{
+    background-color: black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 50px 10px;
+}
+.career-job-heading-button-black{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.career-job-main-heading-black{
+    flex: 2;
+}
+.career-job-main-heading-black h3{
+    font-family: var(--font-family-poppins);
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--golden-color);
+    position: relative;
+}
+.career-job-main-heading-black h3::after{
+    content: " ";
+    height: 5px;
+    width: 300px;
+   background-color: var(--golden-color);
+    bottom: -5px;
+    position: absolute;
+    left: 0%;
+ 
+}
+.career-job-apply-link-black{
+    width: 150px;
+    height: 50px;
+    background-color: var(--golden-color);
+    border-radius: 5px;
+    text-align: center;
+    padding: 6px 10px;
+}
+.career-job-apply-link-black:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--golden-color);
+    border: 2px solid var(--golden-color);
+}
+.career-job-apply-link-black a{
+    
+    font-family: var(--font-family-poppins);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+
+.career-job-description-black{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.career-job-description-heading-black h4{
+    color: var(--golden-color);
+    font-size: 50;
+    font-weight: 600;
+    font-family: var(--font-family-poppins);
+}
+.career-job-description-paragraph-black p{
+    font-family: var(--font-family-poppins);
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+.career-job-responsibilities-black{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.career-job-responsibilities-heading-black h4{
+    color: var(--golden-color);
+    font-size: 50;
+    font-weight: 600;
+    font-family: var(--font-family-poppins);
+}
+.career-job-responsiblity-black{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.career-job-responsiblity-black i{
+    color: var(--golden-color);
+}
+.career-job-responsiblity-black span{
+    color: white;
+    font-family: var(--font-family-poppins);
+    margin-left: 10px;
+}
+
+
+
+
+.career-jobs-details-white{
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 50px 10px;
+}
+.career-job-heading-button-white{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.career-job-main-heading-white{
+    flex: 2;
+}
+.career-job-main-heading-white h3{
+    font-family: var(--font-family-poppins);
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--golden-color);
+    position: relative;
+}
+.career-job-main-heading-white h3::after{
+    content: " ";
+    height: 5px;
+    width: 300px;
+   background-color: var(--golden-color);
+    bottom: -5px;
+    position: absolute;
+    left: 0%;
+ 
+}
+.career-job-apply-link-white{
+    width: 150px;
+    height: 50px;
+    background-color: var(--golden-color);
+    border-radius: 5px;
+    text-align: center;
+    padding: 6px 10px;
+   
+}
+.career-job-apply-link-white:hover{
+    cursor: pointer;
+    background-color: Black;
+    color: var(--golden-color);
+    border: 2px solid var(--golden-color);
+}
+.career-job-apply-link-white a{
+    
+    font-family: var(--font-family-poppins);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--black-color);
+    color: white;
+}
+
+
+.career-job-description-white{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.career-job-description-heading-white h4{
+    color: var(--golden-color);
+    font-size: 50;
+    font-weight: 600;
+    font-family: var(--font-family-poppins);
+}
+.career-job-description-paragraph-white p{
+    font-family: var(--font-family-poppins);
+    font-size: 20px;
+    text-align: justify;
+    color: black;
+}
+.career-job-responsibilities-white{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.career-job-responsibilities-heading-white h4{
+    color: var(--golden-color);
+    font-size: 50;
+    font-weight: 600;
+    font-family: var(--font-family-poppins);
+}
+.career-job-responsiblity-white{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.career-job-responsiblity-white i{
+    color: var(--golden-color);
+}
+.career-job-responsiblity-white span{
+    color: black;
+    font-family: var(--font-family-poppins);
+    margin-left: 10px;
+}
+
+
+

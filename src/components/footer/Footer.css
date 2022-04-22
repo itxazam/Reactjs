@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700|Poppins:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+:root{
+    --black-color:#121212;
+    --golden-color:#E5AE35;
+    --font-family-poppins:"poppins", sans-serif;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+footer{
+    background: url("./footer.svg") no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.footer-about{
+    flex: 1;
+}
+.footer-service{
+    flex: 1;
+}
+.footer-quicklinks{
+    flex: 1;
+}
+.footer-contact{
+    flex: 1;
+}
+.footer-heading h4{
+    font-family: var(--font-family-poppins);
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    margin: 20px 30px;
+    color: white;
+}
+.footer-heading h4::after{
+    content: " ";
+    width: 20%;
+    height: 5px;
+    background-color: var(--golden-color);
+    position: absolute;
+    bottom: -8px;
+    left: 0%;
+}
+.footer-company-description{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.footer-company-description p{
+    color: var(--golden-color);
+    font-size: 15px;
+    font-weight: 300;
+    position: relative;
+    margin: 10px;
+}
+.footer-company-description p::before{
+    content: " ";
+    position: absolute;
+    width: 300%;
+    height: 1px;
+    border-radius: 50%;
+    background-color: white;
+    top: -25%;
+    left: -100%;
+}
+
+.footer-about img{
+    margin: 20px 30px;
+    height: 60px;
+    width: 60px;
+}
+.footer-about p{
+    margin-left: 30px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: var(--font-family-poppins);
+}
+.footer-about .footer-social{
+    display: flex;
+}
+.footer-about .footer-social i{
+    background-color: white;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.footer-about .fa-linkedin-in{
+    color: #0e76a8;
+}
+.footer-about .fa-google{
+    color: #e95950;
+}
+.footer-about .fa-facebook-f{
+    color: #3b5998;
+}
+.footer-about .fa-instagram{
+    color: #e95950;
+}
+.footer-about .fa-twitter{
+    color: #00acee;
+}
+.footer-about .footer-social i:hover{
+    background-color: var(--black-color);
+    transition: 0.5s linear;
+    border: 1px solid var(--golden-color);
+    outline: none;
+
+}
+
+
+
+
+
+
+
+
+li{
+    list-style: none;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+i{
+    color: white;
+}
+.footer-service a:hover{
+    color: var(--golden-color);
+    transition: 0.5s linear;
+}
+.footer-links a:hover{
+    color: var(--golden-color);
+    transition: 0.5s linear;
+}
+
+.footer-developer-line{
+    width: 1200px;
+    height: 0.3px;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-left: -40px;
+}
+.foote-developer > p{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+    font-family: var(--font-family-poppins);
+}
+
+.footer-contact span{
+ color: white;
+ margin-left: 10px;
+}
+.footer-contact i {
+    color: var(--golden-color);
+}
